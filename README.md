@@ -50,5 +50,5 @@ Sinta-se à vontade para contribuir com melhorias no projeto! Basta abrir um **p
 Este projeto está licenciado sob a **MIT License**. Consulte o arquivo `LICENSE` para mais detalhes.
 
 ---
-Desenvolvido por **KavoTonolli** 🚀
+Desenvolvido por **Gustavo Tonolli** 🚀
 
