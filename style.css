@@ -29,7 +29,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.container {
+.equipamentos__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -144,6 +144,20 @@ header h1 {
   }
   .mobile-menu {
     display: block;
+  }
+  .global {
+    flex-direction: column;
+    min-height: 500px;
+    & .global__image {
+      justify-content: center;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    & .caixa {
+      padding: 1em;
+    }
   }
 }
 
@@ -377,25 +391,22 @@ section h1 {
     margin-bottom: 20px;
   }
 }
-
-.help-link {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 10px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-
-  &:hover {
-    background-color: #555;
+.sobre__container {
+  max-width: 1200px;
+  margin: 0px auto;
+  h2 {
+    text-align: center;
+    margin: 1em;
+  }
+  p {
+    font-size: 1.5rem;
+    margin: 2em;
   }
 }
 
 .caixa-link {
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 .link-saiba {
@@ -409,25 +420,10 @@ section h1 {
 /* contato */
 .whatsapp {
   position: fixed;
-  right: 2rem;
   bottom: 0.8rem;
+  right: 1rem;
   width: 8.5rem;
-  animation: fadeLogo;
-  animation-timeline: view(auto auto);
-  transition: all 0.4s;
   z-index: 999;
-}
-
-@keyframes fadeLogo {
-  0% {
-    filter: blur(2px);
-    transform: translate(108px, 45px);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0px);
-    transform: translate(0);
-  }
 }
 
 .whatsapp img {
@@ -465,15 +461,9 @@ section h1 {
     width: 27px;
   }
 }
-@media (max-width: 845px) {
-  .whatsapp {
-    width: 7.5rem;
-    right: 1rem;
-  }
-}
+
 .rodape {
   font-size: 1.33rem;
-  padding-top: 2.5rem;
 
   & .juncao {
     text-align: center;
@@ -575,6 +565,9 @@ section h1 {
   gap: 0.65rem;
   list-style: none;
   color: #585858;
+  li {
+    display: flex;
+  }
 }
 .rodape__titulo {
   font-size: 1.92rem;
@@ -601,12 +594,11 @@ section h1 {
 }
 @media (max-width: 30em) {
   .rodape__ancoras {
-    gap: 2rem;
+    gap: 1rem;
   }
 }
 .rodape__ancora-icone {
   display: flex;
-  align-items: center;
   justify-content: start;
   gap: 1rem;
   text-decoration-thickness: 1px;
@@ -616,18 +608,12 @@ section h1 {
   .rodape__ancora-icone {
     width: auto;
     flex: 1;
-    justify-content: center;
   }
 }
-@media (max-width: 30em) {
-  .rodape__ancora-icone {
-    min-width: 100%;
-  }
-}
+
 .rodape__redes {
   display: flex;
   margin-top: 3.55rem;
-  justify-content: center;
   align-items: center;
   gap: 7.55rem;
 
@@ -650,4 +636,16 @@ section h1 {
   opacity: 0.5;
   padding: 1.55rem 17rem;
   text-align: center;
+}
+
+#rodape__direitos {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  font-size: 1.17rem;
+  padding: 1.55rem 17rem;
+  text-align: center;
+  p {
+    color: #fff;
+  }
 }
