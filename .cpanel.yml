@@ -1,9 +1,0 @@
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home2/kavoto44/repositories/kavotonolli
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp sobre.html $DEPLOYPATH
-    - /bin/cp servicos.html $DEPLOYPATH
-    - /bin/cp contato.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
