@@ -6,24 +6,20 @@
     opacity: 1;
   }
 }
-
 :root {
   --primary-color: #3454d1;
   --dark-color: #070707;
   --secondary-color: #34d1bf;
   --white-background: #efefef;
 }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
@@ -43,7 +39,6 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
-
 header {
   padding: 0.55rem 3.12rem;
   width: 100%;
@@ -52,15 +47,6 @@ header {
   & img {
     width: 10rem;
   }
-}
-
-header.scrolled {
-  /* com logo pranca  */
-  /* background-color: #3333338a; */
-  /* com logo prera */
-  background-color: rgba(0, 0, 0, 0.548);
-  border: none;
-  padding: 1rem 3.45rem;
 }
 
 header::before {
@@ -176,11 +162,9 @@ header h1 {
     }
   }
 }
-
 .text {
   transition: border 0.4s;
 }
-
 .nav-list.active {
   display: flex;
   transform: translateX(0);
@@ -189,30 +173,15 @@ header h1 {
     right: 0.5rem;
   }
 }
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 .mobile-menu.active .line1 {
   transform: rotate(-45deg) translate(-8px, 8px);
 }
-
 .mobile-menu.active .line2 {
   opacity: 0;
 }
-
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
-
 #intro {
   background-image: url(assets/images/backk.png);
   background-size: cover;
@@ -225,7 +194,6 @@ header h1 {
   color: #fff;
   z-index: 1;
 }
-
 .overlay {
   background-color: rgba(0, 0, 0, 0);
   padding: 2em 4em;
@@ -236,7 +204,6 @@ header h1 {
   justify-content: center;
   align-items: center;
   animation: appear 3s;
-
   & .overlay-location {
     margin-top: 1.55rem;
     display: flex;
@@ -245,23 +212,19 @@ header h1 {
     gap: 1rem;
   }
 }
-
 @media all and (max-width: 741px) {
   .overlay {
     padding: 1em;
   }
 }
-
 #intro h1 {
   font-size: 1.5em;
 }
-
 #intro p {
   font-size: 1.2em;
   max-width: 600px;
   margin: 15px 0 20px 0;
 }
-
 .saiba-mais,
 .link-principal,
 .saiba-mais-link {
@@ -276,19 +239,16 @@ header h1 {
   unicode-bidi: isolate;
   transition: background-color ease-in 0.3s;
 }
-
 .saiba-mais,
 .link-principal:hover,
 .saiba-mais-link:hover {
   background-color: rgb(22, 22, 174);
 }
-
 section {
   padding: 60px 20px;
   background: var(--white-background);
   color: #333;
 }
-
 section h1 {
   font-size: 3.5rem;
 }
@@ -296,7 +256,6 @@ a.global__link {
   text-decoration: none;
   color: #333;
 }
-
 .global {
   cursor: pointer;
   height: 200px;
@@ -309,7 +268,6 @@ a.global__link {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-
   &:hover {
     transform: translateY(-10px);
   }
@@ -325,17 +283,14 @@ a.global__link {
       height: 200px;
     }
   }
-
   & .caixa {
     & .card-info {
       display: flex;
       flex-flow: column;
-
       & h3 {
         font-size: 1.8em;
         margin: 0 0 15px;
       }
-
       & p {
         font-size: 1em;
         color: #666;
@@ -344,73 +299,9 @@ a.global__link {
     }
   }
 }
-
 @media (max-width: 830px) {
   section h1 {
     font-size: 2.55rem;
-  }
-  .course {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-
-    & .course-info {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: column;
-      text-align: center;
-      width: 30rem;
-    }
-  }
-}
-
-.diferente {
-  width: 340px;
-}
-
-.course-info {
-  padding: 20px;
-}
-
-.course h3 {
-  font-size: 1.8em;
-  margin: 0 0 15px;
-}
-
-.course p {
-  font-size: 1em;
-  color: #666;
-  margin: 0 0 15px;
-}
-
-.course a {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1em;
-  text-decoration: none;
-  transition: background-color 0.3s;
-
-  &:hover {
-    background-color: #555;
-  }
-}
-
-#help {
-  margin-bottom: 12rem;
-}
-
-.help-content {
-  text-align: center;
-
-  & p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
   }
 }
 .sobre__container {
@@ -461,12 +352,6 @@ a.global__link {
 .link-saiba {
   width: 12rem;
 }
-
-#curso {
-  padding-top: 20rem;
-}
-
-/* contato */
 .whatsapp {
   position: fixed;
   bottom: 0.8rem;
@@ -504,30 +389,25 @@ a.global__link {
   }
 }
 
-/* footer */
 #logo-watts {
   & img {
     width: 27px;
   }
 }
-
 .rodape {
   font-size: 1.33rem;
-
   & .juncao {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.55rem;
-
     & p {
       font-size: 3.55rem;
       font-weight: 600;
     }
   }
 }
-
 @media (max-width: 563px) {
   .rodape__secao-orcamento {
     text-align: center;
@@ -537,11 +417,7 @@ a.global__link {
     }
   }
 }
-
 .rodape__secao-orcamento {
-  /* background-color: #EFEFEF; */
-  /* background-image: linear-gradient(to bottom, #f5f5ff, #ecedf6, #e3e5ed, #dadde4, #d2d5db); */
-
   padding: 2.55rem;
   display: flex;
   align-items: center;
@@ -549,7 +425,6 @@ a.global__link {
   gap: 2.55rem;
   flex-flow: column;
 }
-
 .rodape__container {
   display: flex;
   justify-content: space-between;
@@ -557,19 +432,16 @@ a.global__link {
   max-width: 136.6rem;
   margin: 0 auto;
 }
-
 @media (max-width: 59.375em) {
   ul {
     text-align: center;
   }
-
   .rodape__container {
     flex-direction: column;
     gap: 3.12rem;
     align-items: center;
   }
 }
-
 @media (max-width: 59.375em) {
   .rodape__app {
     flex-direction: column;
@@ -671,24 +543,20 @@ a.global__link {
     flex: 1;
   }
 }
-
 .rodape__redes {
   display: flex;
   margin-top: 3.55rem;
   align-items: center;
   gap: 7.55rem;
-
   & .rodape__rede {
     opacity: 0.6;
     filter: grayscale(1);
-
     &:hover {
       opacity: 1;
       filter: none;
     }
   }
 }
-
 .rodape__secao-empresa {
   display: flex;
   justify-content: center;
@@ -698,7 +566,6 @@ a.global__link {
   padding: 1.55rem 17rem;
   text-align: center;
 }
-
 #rodape__direitos {
   display: flex;
   justify-content: center;
