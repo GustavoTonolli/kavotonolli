@@ -159,6 +159,22 @@ header h1 {
       padding: 1em;
     }
   }
+  .sobre__fundador__container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin: 0px auto 15px auto;
+    }
+    & .sobre__fundador__content {
+      h2 {
+        text-align: center;
+      }
+      p {
+        margin: 2em;
+      }
+    }
+  }
 }
 
 .text {
@@ -276,8 +292,13 @@ section {
 section h1 {
   font-size: 3.5rem;
 }
+a.global__link {
+  text-decoration: none;
+  color: #333;
+}
 
 .global {
+  cursor: pointer;
   height: 200px;
   display: flex;
   align-items: center;
@@ -300,7 +321,8 @@ section h1 {
     background-size: cover;
     img {
       /* height: 20rem;  */
-      width: 230px;
+      width: 240px;
+      height: 200px;
     }
   }
 
@@ -395,12 +417,39 @@ section h1 {
   max-width: 1200px;
   margin: 0px auto;
   h2 {
+    font-size: 3.55rem;
+    font-weight: 600;
     text-align: center;
     margin: 1em;
   }
   p {
-    font-size: 1.5rem;
+    text-align: justify;
+    font-size: 1.8rem;
     margin: 2em;
+  }
+}
+.sobre__fundador__container {
+  display: flex;
+  gap: 2.55rem;
+  justify-content: center;
+  align-items: end;
+  & .sobre__fundador__content {
+    max-width: 800px;
+  }
+
+  h2 {
+    font-size: 3.55rem;
+    font-weight: 600;
+    margin-bottom: 2em;
+  }
+
+  img {
+    max-width: 300px;
+  }
+  p {
+    margin-top: 2em;
+    font-size: 1.8rem;
+    text-align: justify;
   }
 }
 
@@ -565,6 +614,18 @@ section h1 {
   gap: 0.65rem;
   list-style: none;
   color: #585858;
+  li {
+    display: flex;
+  }
+}
+.contato__links {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 2em;
+  gap: 2rem;
+  list-style: none;
+  font-size: 2rem;
+  color: #fff;
   li {
     display: flex;
   }
